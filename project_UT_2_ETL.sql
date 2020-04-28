@@ -3,7 +3,7 @@
 
 
 CREATE TABLE "CQI_arabica" (
-    "Country_of_Origin" VARCHAR(100)   NOT NULL,
+    "ID" INT   NOT NULL,
     "quality_score" FLOAT   NOT NULL,
     "Species" VARCHAR(100)   NOT NULL,
     "Owner" VARCHAR(100)   NOT NULL,
@@ -45,79 +45,44 @@ CREATE TABLE "CQI_arabica" (
     "Certification_Address" VARCHAR(100)   NOT NULL,
     "Certification_Contact" VARCHAR(100)   NOT NULL,
     CONSTRAINT "pk_CQI_arabica" PRIMARY KEY (
-        "Country_of_Origin"
+        "ID"
      )
 );
 
 CREATE TABLE "ICO_retail_price_per_pound_usd" (
-    "1990" FLOAT   NOT NULL,
-    "1991" FLOAT   NOT NULL,
-    "1992" FLOAT   NOT NULL,
-    "1993" FLOAT   NOT NULL,
-    "1994" FLOAT   NOT NULL,
-    "1995" FLOAT   NOT NULL,
-    "1996" FLOAT   NOT NULL,
-    "1997" FLOAT   NOT NULL,
-    "1998" FLOAT   NOT NULL,
-    "1999" FLOAT   NOT NULL,
-    "2000" FLOAT   NOT NULL,
-    "2001" FLOAT   NOT NULL,
-    "2002" FLOAT   NOT NULL,
-    "2003" FLOAT   NOT NULL,
-    "2004" FLOAT   NOT NULL,
-    "2005" FLOAT   NOT NULL,
-    "2006" FLOAT   NOT NULL,
-    "2007" FLOAT   NOT NULL,
-    "2008" FLOAT   NOT NULL,
-    "2009" FLOAT   NOT NULL,
-    "2010" FLOAT   NOT NULL,
-    "2011" FLOAT   NOT NULL,
-    "2012" FLOAT   NOT NULL,
-    "2013" FLOAT   NOT NULL,
-    "2014" FLOAT   NOT NULL,
-    "2015" FLOAT   NOT NULL,
-    "2016" FLOAT   NOT NULL,
-    "2017" FLOAT   NOT NULL,
-    "2018" FLOAT   NOT NULL,
-    "Country_of_Origin" VARCHAR(100)   NOT NULL,
+    "Calendar_year" INT(100)   NOT NULL,
+    "Colombia" FLOAT   NOT NULL,
+    "Dominican_Republic" FLOAT   NOT NULL,
+    "El_Salvador" FLOAT   NOT NULL,
+    "Guatemala" FLOAT   NOT NULL,
+    "Honduras" FLOAT   NOT NULL,
+    "India" FLOAT   NOT NULL,
+    "Uganda" FLOAT   NOT NULL,
+    "Brazil" FLOAT   NOT NULL,
+    "Ethiopia" FLOAT   NOT NULL,
+    "Togo" FLOAT   NOT NULL,
     CONSTRAINT "pk_ICO_retail_price_per_pound_usd" PRIMARY KEY (
-        "Country_of_Origin"
+        "Calendar_year"
      )
 );
 
 CREATE TABLE "ICO_farmgate_price_per_pound_usc" (
-    "1990" FLOAT   NOT NULL,
-    "1991" FLOAT   NOT NULL,
-    "1992" FLOAT   NOT NULL,
-    "1993" FLOAT   NOT NULL,
-    "1994" FLOAT   NOT NULL,
-    "1995" FLOAT   NOT NULL,
-    "1996" FLOAT   NOT NULL,
-    "1997" FLOAT   NOT NULL,
-    "1998" FLOAT   NOT NULL,
-    "1999" FLOAT   NOT NULL,
-    "2000" FLOAT   NOT NULL,
-    "2001" FLOAT   NOT NULL,
-    "2002" FLOAT   NOT NULL,
-    "2003" FLOAT   NOT NULL,
-    "2004" FLOAT   NOT NULL,
-    "2005" FLOAT   NOT NULL,
-    "2006" FLOAT   NOT NULL,
-    "2007" FLOAT   NOT NULL,
-    "2008" FLOAT   NOT NULL,
-    "2009" FLOAT   NOT NULL,
-    "2010" FLOAT   NOT NULL,
-    "2011" FLOAT   NOT NULL,
-    "2012" FLOAT   NOT NULL,
-    "2013" FLOAT   NOT NULL,
-    "2014" FLOAT   NOT NULL,
-    "2015" FLOAT   NOT NULL,
-    "2016" FLOAT   NOT NULL,
-    "2017" FLOAT   NOT NULL,
-    "2018" FLOAT   NOT NULL,
-    "Country_of_Origin" VARCHAR(100)   NOT NULL,
+    "Calendar_year" INT(100)   NOT NULL,
+    "Austria" FLOAT   NOT NULL,
+    "Cyprus" FLOAT   NOT NULL,
+    "Denmark" FLOAT   NOT NULL,
+    "Finland" FLOAT   NOT NULL,
+    "France" FLOAT   NOT NULL,
+    "Germany" FLOAT   NOT NULL,
+    "Italy" FLOAT   NOT NULL,
+    "Netherlands" FLOAT   NOT NULL,
+    "Portugal" FLOAT   NOT NULL,
+    "Spain" FLOAT   NOT NULL,
+    "Sweden" FLOAT   NOT NULL,
+    "United_Kingdom" FLOAT   NOT NULL,
+    "Norway" FLOAT   NOT NULL,
     CONSTRAINT "pk_ICO_farmgate_price_per_pound_usc" PRIMARY KEY (
-        "Country_of_Origin"
+        "Calendar_year"
      )
 );
 
