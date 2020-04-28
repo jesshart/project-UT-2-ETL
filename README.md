@@ -1,5 +1,7 @@
 # project-UT-2-ETL
 
+Project Report:https://docs.google.com/document/d/1YfI80vJTicYLD2Iy10XIE4ua76wgxK-wl8SmhbzUUm0/edit#
+
 Idea: Create a database combining data from International Coffee Organization (ICO) and Coffee Institute. The relevant fields from ICO include retail price, price to growers, exports/imports, and total production. The Coffee Institute provides more subjective data including  quality sweetness, boldness etc. We will transform the data to allow for easy manipulation in future uses. 
 
 Extract:
